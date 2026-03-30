@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>具身智能全景研究报告（2026）</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <h1>具身智能研究报告 2026</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#overview">概述</a>
+                <a href="#history">发展历史</a>
+                <a href="#technology">技术架构</a>
+                <a href="#industry">产业现状</a>
+                <a href="#chain">产业链</a>
+                <a href="#applications">应用</a>
+                <a href="#market">市场</a>
+                <a href="#future">未来趋势</a>
+                <a href="#references">参考资料</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- 侧边目录栏 -->
+    <aside class="toc-sidebar" id="tocSidebar">
+        <div class="toc-header">
+            <h3>📑 目录导航</h3>
+            <button class="close-toc" onclick="toggleTOC()">×</button>
+        </div>
+        <nav class="toc-content" id="tocContent">
+            <!-- 动态生成目录 -->
+        </nav>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 报告封面 -->
+            <section class="report-cover" id="cover">
+                <div class="cover-content">
+                    <h1 class="cover-title">具身智能全景研究报告</h1>
+                    <p class="cover-subtitle">Embodied AI Comprehensive Research Report 2026</p>
+                    <div class="cover-meta">
+                        <span><strong>编制时间：</strong>2026 年 3 月</span>
+                        <span><strong>报告类型：</strong>综合研究资料汇编</span>
+                    </div>
+                    <div class="cover-tags">
+                        <span class="tag">具身智能</span>
+                        <span class="tag">Embodied AI</span>
+                        <span class="tag">人形机器人</span>
+                        <span class="tag">产业链</span>
+                        <span class="tag">技术架构</span>
+                        <span class="tag">应用场景</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 核心摘要 -->
+            <section class="highlights" id="highlights">
+                <h2>📊 核心摘要</h2>
+                <div class="highlight-cards">
+                    <div class="highlight-card">
+                        <div class="card-icon">💰</div>
+                        <div class="card-value">9150 亿元</div>
+                        <div class="card-label">2025 年市场规模</div>
+                        <div class="card-growth">同比增长 20.4%</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon">🚀</div>
+                        <div class="card-value">10904 亿元</div>
+                        <div class="card-label">2026 年预测规模</div>
+                        <div class="card-growth">突破万亿大关</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon">📈</div>
+                        <div class="card-value">380 亿元</div>
+                        <div class="card-label">2025 年融资总额</div>
+                        <div class="card-growth">305 起融资事件</div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon">🏢</div>
+                        <div class="card-value">600+ 家</div>
+                        <div class="card-label">投资机构布局</div>
+                        <div class="card-growth">资本高度集中头部</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第一章：概述与定义 -->
+            <section class="chapter" id="overview">
+                <h2>一、概述与定义</h2>
+                
+                <div class="section">
+                    <h3>1.1 什么是具身智能</h3>
+                    <p><strong>具身智能（Embodied AI，简称 EAI）</strong> 是人工智能领域的前沿方向，指通过物理实体（如机器人、无人车等）与环境实时交互，实现感知、决策、行动闭环的智能系统。</p>
+                    <p>其核心在于将"大脑"（AI 决策）与"身体"（执行机构）深度融合，让智能体像人类一样在真实世界中学习、适应和执行任务。</p>
+                </div>
+
+                <div class="section">
+                    <h3>1.2 核心概念辨析</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>概念</th>
+                                <th>定义</th>
+                                <th>特征</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>具身智能 (Embodied AI)</strong></td>
+                                <td>有身体并支持物理交互的智能体</td>
+                                <td>"身体力行"——在物理世界执行任务</td>
+                            </tr>
+                            <tr>
+                                <td><strong>非具身智能 (Disembodied AI)</strong></td>
+                                <td>没有物理身体，被动接受数据</td>
+                                <td>"纸上谈兵"——仅处理虚拟信息</td>
+                            </tr>
+                            <tr>
+                                <td><strong>具身智能机器人</strong></td>
+                                <td>满足具身智能能力的机器人</td>
+                                <td>听懂语言→分解任务→识别物体→执行任务</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="section">
+                    <h3>1.3 四大核心要素</h3>
+                    <div class="elements-grid">
+                        <div class="element-card">
+                            <div class="element-icon">🦾</div>
+                            <h4>本体（Body）</h4>
+                            <ul>
+                                <li>实际的执行者，在物理或虚拟世界进行感知和任务执行</li>
+                                <li>形态包括四足机器人、复合机器人、人形机器人等</li>
+                                <li>具备环境感知能力、运动能力和操作执行能力</li>
+                                <li>连接数字世界和物理世界的载体</li>
+                            </ul>
+                        </div>
+                        <div class="element-card">
+                            <div class="element-icon">🧠</div>
+                            <h4>智能体（Agent）</h4>
+                            <ul>
+                                <li>具身于本体之上的智能核心</li>
+                                <li>负责感知、理解、决策、控制</li>
+                                <li>深度网络模型驱动</li>
+                                <li>LLM+ 视觉的多模态模型成为新趋势</li>
+                            </ul>
+                        </div>
+                        <div class="element-card">
+                            <div class="element-icon">📊</div>
+                            <h4>数据（Data）</h4>
+                            <ul>
+                                <li>数据是泛化的关键，稀缺且昂贵</li>
+                                <li>需要 web-scale 级别的数据</li>
+                                <li>行业场景高质量数据是关键支撑</li>
+                            </ul>
+                        </div>
+                        <div class="element-card">
+                            <div class="element-icon">🔄</div>
+                            <h4>学习和进化架构</h4>
+                            <ul>
+                                <li>通过与物理世界交互学习新知识</li>
+                                <li>采用虚拟仿真环境加速演进</li>
+                                <li>Sim2Real 迁移是关键</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>1.4 与传统 AI 的区别</h3>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>维度</th>
+                                <th>传统 AI（如 ChatGPT）</th>
+                                <th>具身智能</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>存在形式</strong></td>
+                                <td>虚拟软件系统</td>
+                                <td>物理实体 + 智能系统</td>
+                            </tr>
+                            <tr>
+                                <td><strong>数据来源</strong></td>
+                                <td>互联网采集的静态数据</td>
+                                <td>第一视角实时感知数据</td>
+                            </tr>
+                            <tr>
+                                <td><strong>交互方式</strong></td>
+                                <td>文本/语音对话</td>
+                                <td>物理动作 + 环境交互</td>
+                            </tr>
+                            <tr>
+                                <td><strong>学习能力</strong></td>
+                                <td>离线训练，在线推理</td>
+                                <td>持续在线学习与进化</td>
+                            </tr>
+                            <tr>
+                                <td><strong>影响范围</strong></td>
+                                <td>数字世界</td>
+                                <td>物理世界</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 第二章：发展历史 -->
+            <section class="chapter" id="history">
+                <h2>二、发展历史与演进阶段</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1950s-1990s</div>
+                        <div class="timeline-content">
+                            <h3>萌芽起步阶段</h3>
+                            <p><strong>特征：</strong>没有大脑的躯体——早期工业机器人</p>
+                            <ul>
+                                <li><strong>1959 年：</strong>第一台工业机器人 Unimate 诞生</li>
+                                <li><strong>1950-1980 年代：</strong>机械臂用于重复性工业操作</li>
+                                <li><strong>理论基础：</strong>AI 三大学派形成（符号主义、连接主义、行为主义）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1990s-2010s</div>
+                        <div class="timeline-content">
+                            <h3>技术积累阶段</h3>
+                            <p><strong>里程碑事件：</strong></p>
+                            <ul>
+                                <li><strong>1991 年：</strong>MIT 推出 Genghis 六足机器人，实现自主行走</li>
+                                <li><strong>2002 年：</strong>iRobot 发布 Roomba 扫地机器人</li>
+                                <li><strong>2007 年：</strong>ROS 开源系统发布</li>
+                                <li><strong>2013 年：</strong>波士顿动力 Atlas 亮相</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2010s-2020</div>
+                        <div class="timeline-content">
+                            <h3>快速演进阶段</h3>
+                            <p><strong>技术特征：</strong></p>
+                            <ul>
+                                <li>深度学习赋能机器人感知系统</li>
+                                <li>人机协作从指令式向协作式转变</li>
+                                <li>从小规模实验室应用向工业场景拓展</li>
+                            </ul>
+                            <p><strong>代表技术：</strong>视觉 - 力觉融合感知、3D 点云处理、自适应力控</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2020-至今</div>
+                        <div class="timeline-content">
+                            <h3>爆发突破阶段</h3>
+                            <p><strong>标志性进展：</strong></p>
+                            <ul>
+                                <li><strong>大模型赋能：</strong>LLM、VLM 等多模态大模型为机器人注入"大脑"</li>
+                                <li><strong>人形机器人量产：</strong>特斯拉 Optimus、优必选 Walker S 等</li>
+                                <li><strong>通用劳动力愿景：</strong>从单一任务执行向通用智能体演进</li>
+                            </ul>
+                            <p><strong>关键转折点：</strong>2023-2024 年，GPT-4、PaLM-E 等模型发布</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 第三章：核心技术架构 -->
+            <section class="chapter" id="technology">
+                <h2>三、核心技术架构</h2>
+                
+                <div class="section">
+                    <h3>3.1 整体技术框架</h3>
+                    <div class="architecture-diagram">
+                        <div class="arch-layer app-layer">
+                            <strong>应用层</strong>
+                            <span>工业制造 | 医疗服务 | 物流配送 | ...</span>
+                        </div>
+                        <div class="arch-layer algo-layer">
+                            <strong>算法层</strong>
+                            <span>感知 | 决策 | 规划 | 控制 | 学习</span>
+                        </div>
+                        <div class="arch-layer hardware-layer">
+                            <strong>硬件层</strong>
+                            <span>传感器 | 执行器 | 减速器 | 伺服系统</span>
+                        </div>
+                        <div class="arch-layer chip-layer">
+                            <strong>芯片层</strong>
+                            <span>AI 芯片 | MCU | GPU | 专用处理器</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3.2 大脑与小脑架构</h3>
+                    <div class="brain-cerebellum-grid">
+                        <div class="bc-card brain-card">
+                            <h4>🧠 大脑（认知决策层）</h4>
+                            <p><strong>功能定位：</strong>复杂任务规划、多模态理解、语义推理</p>
+                            <p><strong>核心技术：</strong>LLM、VLM、MLLM</p>
+                            <p><strong>典型能力：</strong></p>
+                            <ul>
+                                <li>任务分解与编排</li>
+                                <li>跨模态感知融合</li>
+                                <li>长期记忆与个性化关怀</li>
+                            </ul>
+                        </div>
+                        <div class="bc-card cerebellum-card">
+                            <h4>⚙️ 小脑（运动执行层）</h4>
+                            <p><strong>功能定位：</strong>运动控制、平衡协调、精细操作</p>
+                            <p><strong>核心技术：</strong>强化学习、模仿学习、阻抗/导纳控制</p>
+                            <p><strong>典型能力：</strong></p>
+                            <ul>
+                                <li>直膝行走与地形适应</li>
+                                <li>力控精度控制</li>
+                                <li>Sim2Real 迁移学习</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="closed-loop">
+                        <strong>协同闭环：</strong>感知 → 大脑规划 → 小脑执行 → 反馈增强 → 持续进化
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3.3 自主决策两大范式</h3>
+                    
+                    <div class="decision-paradigm">
+                        <h4>范式一：分层决策（Hierarchical Decision-Making）</h4>
+                        <p><strong>流程：</strong>感知 → 高层规划 → 底层执行 → 反馈增强</p>
+                        
+                        <div class="sub-section">
+                            <h5>高层规划方法</h5>
+                            <ul>
+                                <li><strong>结构化语言：</strong>LLM 生成 PDDL 规划（LLM+P、PDDL-WM）</li>
+                                <li><strong>自然语言：</strong>SayCan、Text2Motion 用 RL 值函数过滤</li>
+                                <li><strong>编程语言：</strong>Code-as-Policy、Instruct2Act 转为 Python 代码</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h5>底层执行技术</h5>
+                            <ul>
+                                <li>传统 PID/MPC 控制</li>
+                                <li>扩散模型输出连续轨迹（π₀、Octo）</li>
+                                <li>结合 CLIP、SAM 等视觉 API</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sub-section">
+                            <h5>反馈闭环来源</h5>
+                            <ul>
+                                <li><strong>Self-Reflection：</strong>LLM 自评自改（Re-Prompting、Reflexion）</li>
+                                <li><strong>人类反馈：</strong>在线接受语言纠正（YAY Robot、IRAP）</li>
+                                <li><strong>环境反馈：</strong>多模态观测转自然语言再规划</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="decision-paradigm">
+                        <h4>范式二：端到端决策（Vision-Language-Action, VLA）</h4>
+                        <p><strong>核心思想：</strong>直接映射多模态输入到动作输出</p>
+                        
+                        <table class="vla-table">
+                            <thead>
+                                <tr>
+                                    <th>模型</th>
+                                    <th>Tokenizer</th>
+                                    <th>融合模块</th>
+                                    <th>De-Tokenizer</th>
+                                    <th>特点</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>RT-2</strong></td>
+                                    <td>视觉/语言/动作统一编码</td>
+                                    <td>Cross-Attention</td>
+                                    <td>离散动作解码</td>
+                                    <td>Google 出品，泛化能力强</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>OpenVLA</strong></td>
+                                    <td>多模态统一编码</td>
+                                    <td>Transformer</td>
+                                    <td>连续轨迹输出</td>
+                                    <td>开源社区主导</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Octo</strong></td>
+                                    <td>多模态编码</td>
+                                    <td>Diffusion Head</td>
+                                    <td>扩散策略</td>
+                                    <td>平滑精准</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>π₀</strong></td>
+                                    <td>流匹配编码</td>
+                                    <td>Flow Matching</td>
+                                    <td>连续解码</td>
+                                    <td>推理速度快</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <p><strong>三大增强方向：</strong></p>
+                        <ol>
+                            <li><strong>感知增强：</strong>BYO-VLA 运行时去噪、3D-VLA 引入点云</li>
+                            <li><strong>轨迹优化：</strong>Diffusion-VLA 用扩散头生成平滑轨迹</li>
+                            <li><strong>成本降低：</strong>TinyVLA 知识蒸馏 + 量化，边缘端 30ms 推理</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3.4 具身学习关键技术</h3>
+                    
+                    <div class="learning-methods">
+                        <div class="method-card">
+                            <h4>🎯 模仿学习（Imitation Learning）</h4>
+                            <div class="method-content">
+                                <p><strong>扩散策略：</strong>Diffusion Policy、3D-Diffusion 用 U-Net 建模多模态动作分布，抗噪声、长程一致性好</p>
+                                <p><strong>Transformer 策略：</strong>RT-1、ALOHA、Mobile ALOHA 用 Decision Transformer 结构，端到端输出动作序列</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method-card">
+                            <h4>🏆 强化学习（Reinforcement Learning）</h4>
+                            <div class="method-content">
+                                <table class="rl-table">
+                                    <thead>
+                                        <tr>
+                                            <th>痛点</th>
+                                            <th>大模型解法</th>
+                                            <th>代表工作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>奖励函数设计难</td>
+                                            <td>GPT-4 自动生成密集奖励</td>
+                                            <td>Eureka、Text2Reward</td>
+                                        </tr>
+                                        <tr>
+                                            <td>策略网络表达弱</td>
+                                            <td>扩散/Transformer/LLM作为策略</td>
+                                            <td>Diffusion-QL、GLAM、LaMo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>进阶路径：</strong>PPO → SAC → 模仿学习 → 分层 RL</p>
+                            </div>
+                        </div>
+                        
+                        <div class="method-card">
+                            <h4>💻 仿真与数字孪生</h4>
+                            <div class="method-content">
+                                <p><strong>高保真物理仿真平台：</strong>NVIDIA Isaac Sim、PyBullet、Gazebo、UnitreeSim（宇树自研）</p>
+                                <p><strong>核心价值：</strong></p>
+                                <ul>
+                                    <li>24 小时不间断海量测试，加速算法迭代</li>
+                                    <li>合成数据生成（带精准标注的图像）</li>
+                                    <li>数字孪生同步：虚拟与现实状态同步</li>
+                                </ul>
+                                <p class="note"><strong>注意：</strong>合成数据与真实数据存在分布差异（Sim2Real Gap），需结合域自适应技术或少量真实数据微调。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>3.5 世界模型（World Model）</h3>
+                    
+                    <p><strong>核心本质：</strong>在"脑内"模拟物理世界，预测动作后果</p>
+                    
+                    <table class="wm-table">
+                        <thead>
+                            <tr>
+                                <th>路线</th>
+                                <th>代表模型</th>
+                                <th>特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Latent Space</strong></td>
+                                <td>RSSM → Dreamer 系列</td>
+                                <td>低维潜空间预测</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transformer</strong></td>
+                                <td>Genie、IRIS</td>
+                                <td>自注意力建模长程依赖</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Diffusion</strong></td>
+                                <td>UniPi、Sora</td>
+                                <td>像素空间生成未来帧</td>
+                            </tr>
+                            <tr>
+                                <td><strong>JEPA</strong></td>
+                                <td>LeCun 提出</td>
+                                <td>非生成式联合嵌入预测，强调常识推理</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>两大应用场景：</strong></p>
+                    <ol>
+                        <li><strong>决策：</strong>在"脑内"模拟验证动作，降低真实交互成本（UniSim、NeBula）</li>
+                        <li><strong>学习：</strong>提供虚拟交互环境 + 合成数据，提升样本效率（SynthER、SWIM）</li>
+                    </ol>
+                    
+                    <div class="comparison-box">
+                        <h4>世界模型 vs LLM</h4>
+                        <table class="wm-llm-comparison">
+                            <thead>
+                                <tr>
+                                    <th>维度</th>
+                                    <th>LLM</th>
+                                    <th>World Model</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>训练数据</strong></td>
+                                    <td>文本 token</td>
+                                    <td>像素/体素 + 物理规律</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>核心能力</strong></td>
+                                    <td>语言理解与生成</td>
+                                    <td>物理世界模拟与预测</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>应用场景</strong></td>
+                                    <td>虚拟世界（对话、写作）</td>
+                                    <td>物理世界（机器人控制、自动驾驶）</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>发展趋势</strong></td>
+                                    <td>多模态融合</td>
+                                    <td>与大模型联合架构（MLLM-WM）</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 后续章节将通过 JavaScript 动态加载 -->
+            <div id="remaining-content"></div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 具身智能全景研究报告 | Compiled by 邱达 (司酒)</p>
+            <p>ATH 事业群 - 悟空事业部-CDS-AISA</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" onclick="scrollToTop()" title="返回顶部">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- 第四章及后续内容容器 -->
+<script type="text/template" id="chapter4-content">
+            <section class="chapter" id="industry">
+                <h2>四、全球产业发展现状</h2>
+                
+                <div class="section">
+                    <h3>4.1 全球发展整体态势</h3>
+                    <div class="market-stats">
+                        <div class="stat-item">
+                            <div class="stat-year">2018 年</div>
+                            <div class="stat-value">2133 亿元</div>
+                            <div class="stat-label">中国市场规模</div>
+                        </div>
+                        <div class="stat-arrow">→</div>
+                        <div class="stat-item highlight">
+                            <div class="stat-year">2025 年</div>
+                            <div class="stat-value">9150 亿元</div>
+                            <div class="stat-label">同比增长 20.4%</div>
+                        </div>
+                        <div class="stat-arrow">→</div>
+                        <div class="stat-item highlight">
+                            <div class="stat-year">2026 年</div>
+                            <div class="stat-value">10904 亿元</div>
+                            <div class="stat-label">突破万亿元大关</div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>竞争格局：</strong>中国已跻身全球具身智能第一梯队，与欧美形成三足鼎立之势。</p>
+                    
+                    <p><strong>技术演进三大趋势：</strong></p>
+                    <ol>
+                        <li><strong>世界模型构建：</strong>推动具身智能从单一任务执行向通用劳动力转型</li>
+                        <li><strong>数据闭环系统：</strong>完善技术能力的自我迭代</li>
+                        <li><strong>协作机制优化：</strong>促进人机物三元融合</li>
+                    </ol>
+                </div>
+
+                <div class="section">
+                    <h3>4.2 国外主要玩家</h3>
+                    
+                    <div class="companies-grid">
+                        <div class="company-card tech-giant">
+                            <h4>🏢 科技巨头</h4>
+                            
+                            <div class="company-item">
+                                <h5>特斯拉（Tesla）</h5>
+                                <p><strong>产品：</strong>Optimus Gen2/Gen3 人形机器人</p>
+                                <p><strong>优势：</strong>汽车产线复用、FSD 视觉方案迁移、2025 年小规模量产</p>
+                                <p><strong>应用：</strong>工厂搬运、装配等通用场景</p>
+                            </div>
+                            
+                            <div class="company-item">
+                                <h5>谷歌 DeepMind</h5>
+                                <p><strong>产品：</strong>Gato 多模态模型、RT 系列</p>
+                                <p><strong>优势：</strong>跨任务迁移学习能力、600+ 任务的通用策略</p>
+                                <p><strong>技术路线：</strong>Transformer 统一架构</p>
+                            </div>
+                            
+                            <div class="company-item">
+                                <h5>英伟达（NVIDIA）</h5>
+                                <p><strong>产品：</strong>Isaac Gym、Omniverse 仿真平台</p>
+                                <p><strong>优势：</strong>GPU 算力垄断（B200、GB300）、训练生态主导地位</p>
+                            </div>
+                            
+                            <div class="company-item">
+                                <h5>Figure AI</h5>
+                                <p><strong>产品：</strong>Figure 03 通用人形机器人</p>
+                                <p><strong>优势：</strong>动态行走、复杂任务执行</p>
+                                <p><strong>融资：</strong>获微软、OpenAI 等投资</p>
+                            </div>
+                        </div>
+                        
+                        <div class="company-card robot-company">
+                            <h4>🤖 专业机器人企业</h4>
+                            
+                            <div class="company-item">
+                                <h5>波士顿动力</h5>
+                                <p><strong>产品：</strong>Atlas（人形）、Spot（四足）</p>
+                                <p><strong>优势：</strong>顶尖机动性能，公园跑、体操等高难度动作</p>
+                                <p><strong>应用：</strong>工业巡检、特种作业</p>
+                            </div>
+                            
+                            <div class="company-item">
+                                <h5>本田（Honda）</h5>
+                                <p><strong>产品：</strong>ASIMO（已退役）、E2-DR</p>
+                                <p><strong>定位：</strong>服务级人形机器人</p>
+                                <p><strong>场景：</strong>灾难救援、养老服务</p>
+                            </div>
+                            
+                            <div class="company-item">
+                                <h5>丰田（Toyota）</h5>
+                                <p><strong>产品：</strong>Human Support Robot（HSR）</p>
+                                <p><strong>场景：</strong>养老护理、生活辅助</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>4.3 国内主要玩家（28 家代表性企业）</h3>
+                    
+                    <div class="china-companies">
+                        <div class="company-category">
+                            <h4>🚶 人形/具身智能机器人（10 家）</h4>
+                            <table class="company-table">
+                                <thead>
+                                    <tr>
+                                        <th>企业</th>
+                                        <th>代表产品</th>
+                                        <th>核心优势</th>
+                                        <th>应用场景</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>优必选</strong></td>
+                                        <td>Walker S 系列</td>
+                                        <td>商用落地领先，已上市</td>
+                                        <td>工业装配、展厅服务</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>宇树科技</strong></td>
+                                        <td>H1/G1</td>
+                                        <td>运动控制技术突出，性价比高</td>
+                                        <td>科研教育、巡检</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>智元机器人</strong></td>
+                                        <td>远征 A2</td>
+                                        <td>大模型深度融合</td>
+                                        <td>工厂作业</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>星动纪元</strong></td>
+                                        <td>比亚迪合作车型</td>
+                                        <td>整车供应链优势</td>
+                                        <td>汽车产线</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>众擎</strong></td>
+                                        <td>T800</td>
+                                        <td>价格优势显著</td>
+                                        <td>工业场景</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>逐际动力</strong></td>
+                                        <td>四足/人形</td>
+                                        <td>步态算法领先</td>
+                                        <td>复杂地形</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>傅利叶</strong></td>
+                                        <td>GR-1</td>
+                                        <td>医疗认证，康复背景</td>
+                                        <td>医疗康复</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>达闼</strong></td>
+                                        <td>XR-1</td>
+                                        <td>5G+ 云脑技术</td>
+                                        <td>云端智能</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>小米</strong></td>
+                                        <td>CyberOne（铁大）</td>
+                                        <td>消费电子生态</td>
+                                        <td>家庭陪伴</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>银河通用</strong></td>
+                                        <td>轻量化人形</td>
+                                        <td>成本控制优秀</td>
+                                        <td>商用服务</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="company-category">
+                            <h4>🏭 工业机器人（9 家）</h4>
+                            <table class="company-table">
+                                <thead>
+                                    <tr>
+                                        <th>企业</th>
+                                        <th>核心产品</th>
+                                        <th>市场地位</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>新松机器人</strong></td>
+                                        <td>GCR 协作机器人</td>
+                                        <td>国产龙头，全品类布局</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>埃斯顿</strong></td>
+                                        <td>伺服系统 + 机器人</td>
+                                        <td>全产业链布局</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>汇川技术</strong></td>
+                                        <td>一体化方案</td>
+                                        <td>市占率 28.2%，国内第一</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>埃夫特</strong></td>
+                                        <td>喷涂/焊接机器人</td>
+                                        <td>海外市场拓展领先</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>节卡</strong></td>
+                                        <td>协作机器人</td>
+                                        <td>力控技术顶尖</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>拓斯达</strong></td>
+                                        <td>整线自动化</td>
+                                        <td>注塑/3C/新能源解决方案</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>珞石</strong></td>
+                                        <td>xMate 轻量协作</td>
+                                        <td>3C/医疗精密作业</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>勃肯特</strong></td>
+                                        <td>并联机器人</td>
+                                        <td>高速分拣</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>钱江机器人</strong></td>
+                                        <td>汽车产业链配套</td>
+                                        <td>焊接/搬运</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="company-category">
+                            <h4>🛎️ 服务/移动/特种机器人（9 家）</h4>
+                            <table class="company-table">
+                                <thead>
+                                    <tr>
+                                        <th>企业</th>
+                                        <th>代表产品</th>
+                                        <th>出货量/规模</th>
+                                        <th>场景</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>擎朗智能</strong></td>
+                                        <td>配送/清洁机器人</td>
+                                        <td>累计 10 万 + 台</td>
+                                        <td>餐厅/酒店</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>普渡科技</strong></td>
+                                        <td>Bellabot 等</td>
+                                        <td>全球覆盖</td>
+                                        <td>商用服务</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>云迹</strong></td>
+                                        <td>酒店配送机器人</td>
+                                        <td>成熟商用模式</td>
+                                        <td>酒店</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>极智嘉</strong></td>
+                                        <td>仓储 AMR</td>
+                                        <td>电商物流</td>
+                                        <td>仓储</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>海康机器人</strong></td>
+                                        <td>视觉+AMR</td>
+                                        <td>工业视觉龙头</td>
+                                        <td>工业/物流</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>九号公司</strong></td>
+                                        <td>平衡车 + 服务机器人</td>
+                                        <td>短距移动协同</td>
+                                        <td>商用/家用</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>高仙</strong></td>
+                                        <td>商用清洁机器人</td>
+                                        <td>无人驾驶底盘</td>
+                                        <td>商业清洁</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>天智航</strong></td>
+                                        <td>骨科手术机器人</td>
+                                        <td>微创医疗</td>
+                                        <td>医疗手术</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>万勋</strong></td>
+                                        <td>特种巡检机器人</td>
+                                        <td>高危替代人力</td>
+                                        <td>电力/消防/管道</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</script>
+
+<script type="text/template" id="chapter5-content">
+            <section class="chapter" id="chain">
+                <h2>五、中国产业链全景分析</h2>
+                
+                <div class="section">
+                    <h3>5.1 产业链整体结构</h3>
+                    <div class="chain-diagram">
+                        <div class="chain-segment upstream">
+                            <h4>上游：软硬件供应</h4>
+                            <ul>
+                                <li>芯片、传感器、控制器、电机、通信模组</li>
+                                <li>能源管理、AI 算法、云服务</li>
+                            </ul>
+                        </div>
+                        <div class="chain-arrow">↓</div>
+                        <div class="chain-segment midstream">
+                            <h4>中游：产品制造</h4>
+                            <ul>
+                                <li>人形机器人（典型代表）</li>
+                                <li>四足机器人、机械臂、无人车等</li>
+                            </ul>
+                        </div>
+                        <div class="chain-arrow">↓</div>
+                        <div class="chain-segment downstream">
+                            <h4>下游：应用场景</h4>
+                            <ul>
+                                <li>工业制造、服务业、医疗健康</li>
+                                <li>教育娱乐、交通出行、公共安全</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.2 上游核心环节分析</h3>
+                    
+                    <div class="upstream-components">
+                        <div class="component-card">
+                            <h4>💾 AI 芯片</h4>
+                            <div class="component-stats">
+                                <div class="cs-item">
+                                    <span class="cs-year">2023 年</span>
+                                    <span class="cs-value">1206 亿元</span>
+                                    <span class="cs-growth">+41.9%</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-year">2025 预测</span>
+                                    <span class="cs-value">1530 亿元</span>
+                                </div>
+                            </div>
+                            <p><strong>主要企业：</strong></p>
+                            <ul>
+                                <li><strong>已上市：</strong>寒武纪、云天励飞</li>
+                                <li><strong>未上市：</strong>地平线、燧原科技</li>
+                                <li><strong>国际巨头：</strong>英伟达（垄断高端）、AMD、Intel</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>📡 传感器</h4>
+                            <div class="component-stats">
+                                <div class="cs-item">
+                                    <span class="cs-year">2023 年</span>
+                                    <span class="cs-value">1336.2 亿元</span>
+                                    <span class="cs-growth">CAGR 15.96%</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-year">2025 预测</span>
+                                    <span class="cs-value">1795.5 亿元</span>
+                                </div>
+                            </div>
+                            <p><strong>核心类型：</strong>六维力传感器、3D 视觉传感器、激光雷达 LiDAR、IMU</p>
+                            <p><strong>主要企业：</strong>韦尔股份、兆易创新、华润微、华工科技、歌尔股份</p>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>⚙️ 减速器</h4>
+                            <div class="component-stats">
+                                <div class="cs-item">
+                                    <span class="cs-year">2023 年</span>
+                                    <span class="cs-value">1387 亿元</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-year">2024 年</span>
+                                    <span class="cs-value">1448 亿元</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-year">2025 预测</span>
+                                    <span class="cs-value">1510 亿元</span>
+                                </div>
+                            </div>
+                            <p><strong>技术分类：</strong></p>
+                            <ul>
+                                <li><strong>谐波减速器：</strong>轻载高精度（绿的谐波、日本哈默纳科）</li>
+                                <li><strong>RV 减速器：</strong>重载高刚性（纳博特斯克、双环传动）</li>
+                            </ul>
+                            <p><strong>主要企业：</strong>中大力德、绿的谐波、双环传动、恒丰泰、南通振康</p>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>🔌 伺服系统</h4>
+                            <div class="component-stats">
+                                <div class="cs-item">
+                                    <span class="cs-year">2023 年</span>
+                                    <span class="cs-value">220 亿元</span>
+                                    <span class="cs-growth">+6.8%</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-year">2025 预测</span>
+                                    <span class="cs-value">248 亿元</span>
+                                </div>
+                            </div>
+                            <p><strong>市场格局（CR5 > 50%）：</strong></p>
+                            <ol>
+                                <li>汇川技术：28.2%</li>
+                                <li>西门子：10.4%</li>
+                                <li>安川：8.4%</li>
+                                <li>三菱电机：6.1%</li>
+                                <li>台达：5.9%</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>🎛️ 控制器</h4>
+                            <p><strong>龙头企业：</strong>汇川技术、和而泰、拓邦股份</p>
+                            <p><strong>应用领域：</strong>PLC、伺服系统、变频器</p>
+                            <p><strong>技术趋势：</strong>工业自动化、智能制造、新能源汽车驱动</p>
+                        </div>
+                        
+                        <div class="component-card">
+                            <h4>🧠 AI 大模型</h4>
+                            <div class="component-stats">
+                                <div class="cs-item">
+                                    <span class="cs-year">2023 年</span>
+                                    <span class="cs-value">141.34 亿元</span>
+                                    <span class="cs-growth">+83.92%</span>
+                                </div>
+                                <div class="cs-item">
+                                    <span class="cs-year">2025 预测</span>
+                                    <span class="cs-value">495.39 亿元</span>
+                                </div>
+                            </div>
+                            <p><strong>代表模型：</strong></p>
+                            <ul>
+                                <li><strong>国际：</strong>GPT-4、PaLM-E、Claude</li>
+                                <li><strong>国内：</strong>文心一言、通义千问、讯飞星火</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.3 中游市场分析</h3>
+                    
+                    <div class="midstream-analysis">
+                        <div class="ma-card">
+                            <h4>整体市场规模</h4>
+                            <div class="ma-stats">
+                                <div class="ma-stat">
+                                    <div class="ma-year">2024 年</div>
+                                    <div class="ma-value">8634 亿元</div>
+                                </div>
+                                <div class="ma-stat highlight">
+                                    <div class="ma-year">2025 预测</div>
+                                    <div class="ma-value">9731 亿元</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ma-card">
+                            <h4>市场结构</h4>
+                            <div class="pie-chart-placeholder">
+                                <div class="pie-segment robot" style="--percentage: 55.6">
+                                    <span>机器人 55.6%</span>
+                                </div>
+                                <div class="pie-segment auto" style="--percentage: 44.4">
+                                    <span>自动驾驶 44.4%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ma-card">
+                            <h4>人形机器人细分</h4>
+                            <div class="growth-chart">
+                                <div class="gc-bar">
+                                    <span class="gc-year">2024</span>
+                                    <span class="gc-value">27.6 亿</span>
+                                    <span class="gc-growth">+53.33%</span>
+                                </div>
+                                <div class="gc-bar">
+                                    <span class="gc-year">2025</span>
+                                    <span class="gc-value">55 亿</span>
+                                </div>
+                                <div class="gc-bar forecast">
+                                    <span class="gc-year">2028</span>
+                                    <span class="gc-value">387 亿</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3>5.4 产业集群布局</h3>
+                    <div class="cluster-map">
+                        <div class="cluster-region">
+                            <h4>长三角</h4>
+                            <p>上海、苏州、杭州</p>
+                            <p class="cluster-feature">完整供应链</p>
+                        </div>
+                        <div class="cluster-region">
+                            <h4>珠三角</h4>
+                            <p>深圳、东莞</p>
+                            <p class="cluster-feature">电子制造优势</p>
+                        </div>
+                        <div class="cluster-region">
+                            <h4>京津冀</h4>
+                            <p>北京、天津</p>
+                            <p class="cluster-feature">研发 + 政策</p>
+                        </div>
+                        <div class="cluster-region">
+                            <h4>中西部</h4>
+                            <p>重庆、武汉</p>
+                            <p class="cluster-feature">制造业基地</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+</script>
+
+<!-- 更多章节模板... -->
